@@ -116,7 +116,7 @@ except Exception as e:
 
 #  YOUR CODE HERE 6 to define get_centroid()
 def get_centroid(geom):
-  assert type(geom) 
+  assert type(geom) in (Point, LineString, Polygon)
   return geom.centroid
 
 # Test and demonstrate the usage of the function. You can, for example, create shapely objects using the functions you created in problem 1 and print out information about their centroids:
@@ -174,6 +174,12 @@ except Exception as e:
 
 
 #  YOUR CODE HERE 9 to define get_length()
+def get_length(geom):
+  assert type(geom) in (LineString, Polygon)
+  if type(geom) == LineString:
+    return geom.length
+  if type(geom) == Polygon:
+    return geom.exterior.length
 
 # Test and demonstrate the usage of the function:
 
