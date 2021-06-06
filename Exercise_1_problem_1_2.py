@@ -12,7 +12,7 @@
 from shapely.geometry import Point, LineString, Polygon
 #YOUR CODE HERE 1 to define create_point_geom()
 def create_point_geom(x_coord, y_coord):
-  point1 = Ponit(x_coord, y_coord)
+  point1 = Point(x_coord, y_coord)
   return point1
 
 # Test your function by running these code cells:
@@ -30,6 +30,9 @@ print(point1.geom_type)
 # 
 
 # YOUR CODE HERE 2 to define create_line_geom()
+def create_line_genom(points):
+  line1 = LineString(points):
+  return line1
 
 # Demonstrate the usage of your function; For example, create a line object with two points: `Point(45.2, 22.34)` & `Point(100.22, -3.20)` and store the result in a variable called `line1`:
 
