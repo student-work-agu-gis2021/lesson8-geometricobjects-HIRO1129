@@ -123,7 +123,7 @@ def get_centroid(geom):
 # 
 
 #  YOUR CODE HERE 7 to define some objects
-
+poly1 = create_poly_geom
 
 # CODE FOR TESTING YOUR SOLUTION
 centroid = get_centroid(poly1)
